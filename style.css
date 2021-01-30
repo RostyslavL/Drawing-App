@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: lightgray;
   font-family: 'Ubuntu', sans-serif;
   color:hsl(9, 37%, 7%);
   font-family: 'Roboto', sans-serif;
@@ -14,4 +15,34 @@ body {
   justify-content: center;
   margin: 0;
   overflow-x: hidden;
+  height: 100vh;
+}
+
+canvas{
+  border: solid 2px slategray;
+}
+.toolbox{
+  background-color: slategray;
+  border: solid 3px slategray;
+  display: flex;
+  width: 605px;
+  padding:  1rem;
+}
+
+.toolbox > * {
+  background-color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; 
+  height: 35px;
+  width: 90px;
+  margin: .3rem;
+  padding: .3rem;
+  cursor: pointer;
+}
+
+.toolbox > *:last-child{
+  margin-left:auto;
 }
